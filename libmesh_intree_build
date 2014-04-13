@@ -32,4 +32,4 @@ dmake
 
 #${LIBMESH_DIR}/libtool --mode=install install -c ${LIBMESH_DIR}/contrib/netcdf/4.2.1.1/liblib/libnetcdf.la ${LIBMESH_DIR}/lib
 
-./install_it.sh
+libmesh_install
