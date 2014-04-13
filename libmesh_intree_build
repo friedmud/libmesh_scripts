@@ -16,7 +16,8 @@ cd $LIBMESH_DIR
             --disable-trilinos \
             --disable-warnings \
             --enable-silent-rules \
-            --enable-unique-id
+            --enable-unique-id \
+            --enable-default-comm-world
 #./configure --prefix=${LIBMESH_DIR} --with-methods="${METHODS}" --enable-legacy-include-paths --enable-legacy-using-namespace  --enable-netcdf=new --enable-exodus=new --enable-nemesis=new --disable-hdf5
 
 dmake
