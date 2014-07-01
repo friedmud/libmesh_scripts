@@ -3,6 +3,7 @@ mkdir lib
 ${LIBMESH_DIR}/libtool --mode=install install -c ${LIBMESH_DIR}/contrib/netcdf/4.3.1/liblib/libnetcdf.la ${LIBMESH_DIR}/lib
 
 ln -s ${LIBMESH_DIR}/include/libmesh/netcdf.h ${LIBMESH_DIR}/include/netcdf.h
+ln -s ${LIBMESH_DIR}/contrib/boost/include/boost ${LIBMESH_DIR}/include/boost
 
 for i in $METHODS
 do
