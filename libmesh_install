@@ -4,6 +4,7 @@ ${LIBMESH_DIR}/libtool --mode=install install -c ${LIBMESH_DIR}/contrib/netcdf/4
 
 ln -s ${LIBMESH_DIR}/include/libmesh/netcdf.h ${LIBMESH_DIR}/include/netcdf.h
 ln -s ${LIBMESH_DIR}/contrib/boost/include/boost ${LIBMESH_DIR}/include/boost
+ln -s ${LIBMESH_DIR}/contrib/eigen/eigen/Eigen ${LIBMESH_DIR}/include/Eigen
 
 for i in $METHODS
 do
