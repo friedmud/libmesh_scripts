@@ -17,7 +17,8 @@ cd $LIBMESH_DIR
             --disable-warnings \
             --enable-silent-rules \
             --enable-unique-id \
-	    --disable-timestamps
+	    --disable-timestamps \
+            --disable-maintainer-mode
 #            --enable-default-comm-world
 #./configure --prefix=${LIBMESH_DIR} --with-methods="${METHODS}" --enable-legacy-include-paths --enable-legacy-using-namespace  --enable-netcdf=new --enable-exodus=new --enable-nemesis=new --disable-hdf5
 
@@ -31,6 +32,6 @@ cd $LIBMESH_DIR
 #  ${LIBMESH_DIR}/libtool --mode=install install -c libmesh_$i.la ${LIBMESH_DIR}/lib
 #done
 
-#${LIBMESH_DIR}/libtool --mode=install install -c ${LIBMESH_DIR}/contrib/netcdf/4.2.1.1/liblib/libnetcdf.la ${LIBMESH_DIR}/lib
+${LIBMESH_DIR}/libtool --mode=install install -c ${LIBMESH_DIR}/contrib/netcdf/v4/liblib/libnetcdf.la ${LIBMESH_DIR}/lib
 
 #libmesh_install
