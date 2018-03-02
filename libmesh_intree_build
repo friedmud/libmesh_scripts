@@ -11,14 +11,18 @@ cd $LIBMESH_DIR
 # Note: even though we won't run 'make install' still specify a prefix!
 ./configure --prefix=${LIBMESH_DIR} \
             --with-methods="${METHODS}" \
-            --enable-openmp \
-            --disable-tbb \
+            --with-thread-model=openmp \
             --disable-trilinos \
             --disable-warnings \
             --enable-silent-rules \
             --enable-unique-id \
 	    --disable-timestamps \
-            --disable-maintainer-mode
+            --disable-maintainer-mode \
+            --enable-unique-ptr \
+            --disable-metaphysicl \
+            --enable-petsc-required
+#            --enable-openmp \
+#            --disable-tbb \
 #            --enable-default-comm-world
 #./configure --prefix=${LIBMESH_DIR} --with-methods="${METHODS}" --enable-legacy-include-paths --enable-legacy-using-namespace  --enable-netcdf=new --enable-exodus=new --enable-nemesis=new --disable-hdf5
 
