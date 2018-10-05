@@ -19,7 +19,7 @@ cd $LIBMESH_DIR
 	    --disable-timestamps \
             --disable-maintainer-mode \
             --enable-unique-ptr \
-            --disable-metaphysicl \
+            --enable-metaphysicl \
             --enable-petsc-required
 #            --enable-openmp \
 #            --disable-tbb \

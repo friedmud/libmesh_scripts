@@ -5,6 +5,8 @@ ${LIBMESH_DIR}/libtool --mode=install install -c ${LIBMESH_DIR}/contrib/netcdf/v
 ln -s ${LIBMESH_DIR}/include/libmesh/netcdf.h ${LIBMESH_DIR}/include/netcdf.h
 ln -s ${LIBMESH_DIR}/contrib/boost/include/boost ${LIBMESH_DIR}/include/boost
 ln -s ${LIBMESH_DIR}/contrib/eigen/eigen/Eigen ${LIBMESH_DIR}/include/Eigen
+mkdir ${LIBMESH_DIR}/include/metaphysicl
+cp ${LIBMESH_DIR}/contrib/metaphysicl/src/*/include/metaphysicl/* ${LIBMESH_DIR}/include/metaphysicl
 
 for i in $METHODS
 do
