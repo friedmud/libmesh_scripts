@@ -1,0 +1,20 @@
+#!/bin/bash
+
+../configure --prefix=${LIBMESH_DIR} \
+             --with-methods="${METHODS}" \
+             --with-thread-model=openmp \
+             --disable-trilinos \
+             --disable-warnings \
+             --enable-silent-rules \
+             --enable-unique-id \
+	     --disable-timestamps \
+             --disable-maintainer-mode \
+             --enable-unique-ptr \
+             --enable-metaphysicl \
+             --enable-petsc-required \
+	     --enable-vtk \
+	     --with-vtk-include=$VTKINCLUDE_DIR \
+	     --with-vtk-lib=$VTKLIB_DIR
+#            --enable-openmp \
+#            --disable-tbb \
+#            --enable-default-comm-world

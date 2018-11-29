@@ -20,7 +20,10 @@ cd $LIBMESH_DIR
             --disable-maintainer-mode \
             --enable-unique-ptr \
             --enable-metaphysicl \
-            --enable-petsc-required
+            --enable-petsc-required \
+	    --enable-vtk \
+	    --with-vtk-include=$VTKINCLUDE_DIR \
+	    --with-vtk-lib=$VTKLIB_DIR
 #            --enable-openmp \
 #            --disable-tbb \
 #            --enable-default-comm-world
